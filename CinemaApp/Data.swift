@@ -9,16 +9,21 @@ import SwiftUI
 
 struct Movie: Identifiable {
     var id = UUID()
-    var movieName: String
+    var imageName: String
     var gradient: LinearGradient
+    var movieName: String
+    var description: String
+    
 }
 
 var movieList = [
-    Movie(movieName: "warcraft", gradient: LinearGradient(colors: [Color.blue, Color.red], startPoint: .topLeading, endPoint: .bottomTrailing)),
-          Movie(movieName: "matrix", gradient: LinearGradient(colors: [Color.green, Color.gray], startPoint: .topLeading, endPoint: .bottomTrailing)),
-          Movie(movieName: "godzillakong", gradient: LinearGradient(colors: [Color.black, Color.orange], startPoint: .topLeading, endPoint: .bottomTrailing)),
-    Movie(movieName: "starwars", gradient: LinearGradient(colors: [.black, .gray], startPoint: .topLeading, endPoint: .bottomTrailing)),
-    Movie(movieName: "batmanvssuperman", gradient: LinearGradient(colors: [.blue, .black], startPoint: .topLeading, endPoint: .bottomTrailing)),
-    Movie(movieName: "wonderwomen", gradient: LinearGradient(colors: [Color.red, Color.blue], startPoint: .topLeading, endPoint: .bottomTrailing)),
-    Movie(movieName: "joker", gradient: LinearGradient(colors: [Color.white, Color.red], startPoint: .topLeading, endPoint: .bottomTrailing))
+    Movie(imageName: "warcraft", gradient: LinearGradient(colors: [Color("Color1"), Color("Color2")], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "WARCRAFT", description: "Action   Adventure   Fantasy"),
+    Movie(imageName: "matrix", gradient: LinearGradient(colors: [Color.green, Color.gray], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "MATRIX", description: "Action   Sci-Fi   Thriller"),
+    Movie(imageName: "godzillakong", gradient: LinearGradient(colors: [.green, .red], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "GODZILLA  vs KONG", description: "Action   Sci-Fi   Thriller"),
+    Movie(imageName: "starwars", gradient: LinearGradient(colors: [.black, .red], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "STAR WARS", description: "Action   Adventure   Fantasy"),
+    Movie(imageName: "batmanvssuperman", gradient: LinearGradient(colors: [.black, .blue], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "BATMAN vs SUPERMAN", description: "Action   Adventure   Sci-Fi"),
+    Movie(imageName: "wonderwomen", gradient: LinearGradient(colors: [Color.orange, Color.blue], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "WONDER WOMEN", description: "Action   Adventure   Fantasy"),
+    Movie(imageName: "joker", gradient: LinearGradient(colors: [Color.black, Color.green], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "JOKER", description: "Crime   Drama   thriller")
 ]
+
+let color1 = Color("Color1")

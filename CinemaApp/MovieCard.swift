@@ -8,24 +8,29 @@
 import SwiftUI
 
 struct MovieCard: View {
-    var photo: Movie = movieList[2]
+    var photo: Movie = movieList[0]
     
     var body: some View {
       //
             
-            Image(photo.movieName)
+            Image(photo.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .offset(y: -70)
                 .overlay {
-                    VStack(alignment: .leading, spacing: 20) {
-                        Text("MATRIX")
-                            .bold()
+                    VStack(spacing: 20) {
+                        Text(photo.movieName)
                             .font(.largeTitle)
-                        Text("Description: ")
-                            .bold()
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            
+                        VStack(spacing: 20) {
+                            Text(photo.description)
+                                .bold()
+                        
                         
                         Text("2002")
+                        }
                     }
                     
                     .frame(width: 390, height: 200)

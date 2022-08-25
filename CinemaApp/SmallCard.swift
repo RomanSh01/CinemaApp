@@ -11,7 +11,7 @@ struct SmallCard: View {
     var photo: Movie = movieList[1]
     
     var body: some View {
-        Image(photo.movieName)
+        Image(photo.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200)
