@@ -12,6 +12,7 @@ struct DescriptionCard: View {
 
     var body: some View {
         
+        
         VStack {
             Spacer()
             VStack(alignment: .leading, spacing: 10) {

@@ -15,6 +15,10 @@
 		E60EE85528B54712001B5CC5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60EE85428B54712001B5CC5 /* Data.swift */; };
 		E60EE85728B558DA001B5CC5 /* SmallCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60EE85628B558DA001B5CC5 /* SmallCard.swift */; };
 		E60EE85B28B581F4001B5CC5 /* DescriptionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60EE85A28B581F4001B5CC5 /* DescriptionCard.swift */; };
+		E67CD0C428BA5E35005E2DE1 /* FavorietsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67CD0C328BA5E35005E2DE1 /* FavorietsButton.swift */; };
+		E67CD0C628BA60D2005E2DE1 /* FavorietsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67CD0C528BA60D2005E2DE1 /* FavorietsView.swift */; };
+		E67CD0C828BA61DB005E2DE1 /* FaforietsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67CD0C728BA61DB005E2DE1 /* FaforietsManager.swift */; };
+		E67CD0CA28BAA5D5005E2DE1 /* FilmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67CD0C928BAA5D4005E2DE1 /* FilmRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		E60EE85428B54712001B5CC5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E60EE85628B558DA001B5CC5 /* SmallCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCard.swift; sourceTree = "<group>"; };
 		E60EE85A28B581F4001B5CC5 /* DescriptionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCard.swift; sourceTree = "<group>"; };
+		E67CD0C328BA5E35005E2DE1 /* FavorietsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsButton.swift; sourceTree = "<group>"; };
+		E67CD0C528BA60D2005E2DE1 /* FavorietsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsView.swift; sourceTree = "<group>"; };
+		E67CD0C728BA61DB005E2DE1 /* FaforietsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaforietsManager.swift; sourceTree = "<group>"; };
+		E67CD0C928BAA5D4005E2DE1 /* FilmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				E60EE85428B54712001B5CC5 /* Data.swift */,
 				E60EE84E28B54528001B5CC5 /* MovieCard.swift */,
 				E60EE85A28B581F4001B5CC5 /* DescriptionCard.swift */,
+				E67CD0C328BA5E35005E2DE1 /* FavorietsButton.swift */,
+				E67CD0C528BA60D2005E2DE1 /* FavorietsView.swift */,
+				E67CD0C728BA61DB005E2DE1 /* FaforietsManager.swift */,
+				E67CD0C928BAA5D4005E2DE1 /* FilmRow.swift */,
 				E60EE84428B5445A001B5CC5 /* Assets.xcassets */,
 				E60EE84628B5445A001B5CC5 /* Preview Content */,
 			);
@@ -149,11 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67CD0C828BA61DB005E2DE1 /* FaforietsManager.swift in Sources */,
 				E60EE84328B54455001B5CC5 /* ContentView.swift in Sources */,
 				E60EE85728B558DA001B5CC5 /* SmallCard.swift in Sources */,
+				E67CD0C428BA5E35005E2DE1 /* FavorietsButton.swift in Sources */,
 				E60EE85B28B581F4001B5CC5 /* DescriptionCard.swift in Sources */,
+				E67CD0C628BA60D2005E2DE1 /* FavorietsView.swift in Sources */,
 				E60EE84128B54455001B5CC5 /* CinemaAppApp.swift in Sources */,
 				E60EE84F28B54528001B5CC5 /* MovieCard.swift in Sources */,
+				E67CD0CA28BAA5D5005E2DE1 /* FilmRow.swift in Sources */,
 				E60EE85528B54712001B5CC5 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

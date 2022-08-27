@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var favorietsManager = FavorietsManager()
     var body: some View {
         
         NavigationView {
@@ -20,18 +21,24 @@ struct ContentView: View {
                         ForEach(movieList) { item in
                             NavigationLink(destination: MovieCard(photo: item)) {
                                 SmallCard(photo: item)
+                                    .environmentObject(favorietsManager)
                                    .navigationBarTitle("CINEMA CITY", displayMode: .inline)
-                                    //       .navigationBarHidden(true)
                         }
                     }
                     .padding(.top, 15)
                     .padding(.bottom, 15)
                     .padding(.leading, 15)
+                    .toolbar {
+                        NavigationLink {
+                             FavorietsView()
+                                .environmentObject(favorietsManager)
 
+                        } label: {
+                            FavorietsButton(numberOfFilms: favorietsManager.movies.count)
+                        }
+                    }
                 }
                 }
-
-               
             }
         }
     }
