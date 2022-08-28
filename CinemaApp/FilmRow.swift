@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FilmRow: View {
-@EnvironmentObject var favorietsManager: FavorietsManager
+    @EnvironmentObject var favorietsManager: FavorietsManager
     var film: Movie
     
     var body: some View {
@@ -39,7 +39,6 @@ struct FilmRow: View {
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity, alignment: .leading)
-        
     }
 }
 

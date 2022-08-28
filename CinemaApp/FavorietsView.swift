@@ -9,7 +9,9 @@ import SwiftUI
 
 struct FavorietsView: View {
     @EnvironmentObject var favorietsManager: FavorietsManager
+    
     var body: some View {
+        
         ScrollView {
             if favorietsManager.movies.count > 0 {
                 ForEach(favorietsManager.movies, id: \.id) {

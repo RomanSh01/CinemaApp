@@ -25,5 +25,3 @@ var movieList = [
     Movie(imageName: "wonderwomen", gradient: LinearGradient(colors: [Color.orange, Color.blue], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "WONDER WOMEN", description: "Action   Adventure   Fantasy", year: "2017"),
     Movie(imageName: "joker", gradient: LinearGradient(colors: [Color.black, Color.green], startPoint: .topLeading, endPoint: .bottomTrailing), movieName: "JOKER", description: "Crime   Drama   thriller", year: "2019")
 ]
-
-let color1 = Color("Color1")

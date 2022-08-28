@@ -22,22 +22,22 @@ struct ContentView: View {
                             NavigationLink(destination: MovieCard(photo: item)) {
                                 SmallCard(photo: item)
                                     .environmentObject(favorietsManager)
-                                   .navigationBarTitle("CINEMA CITY", displayMode: .inline)
+                                    .navigationBarTitle("CINEMA CITY", displayMode: .inline)
+                            }
+                        }
+                        .padding(.top, 15)
+                        .padding(.bottom, 15)
+                        .padding(.leading, 15)
+                        .toolbar {
+                            NavigationLink {
+                                FavorietsView()
+                                    .environmentObject(favorietsManager)
+                                
+                            } label: {
+                                FavorietsButton(numberOfFilms: favorietsManager.movies.count)
+                            }
                         }
                     }
-                    .padding(.top, 15)
-                    .padding(.bottom, 15)
-                    .padding(.leading, 15)
-                    .toolbar {
-                        NavigationLink {
-                             FavorietsView()
-                                .environmentObject(favorietsManager)
-
-                        } label: {
-                            FavorietsButton(numberOfFilms: favorietsManager.movies.count)
-                        }
-                    }
-                }
                 }
             }
         }

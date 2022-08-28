@@ -11,7 +11,8 @@ struct FavorietsButton: View {
     var numberOfFilms: Int
     var body: some View {
         ZStack(alignment: .topTrailing) {
-        Image(systemName: "star")
+            
+            Image(systemName: "star")
                 .padding(5)
             
             if numberOfFilms > 0 {

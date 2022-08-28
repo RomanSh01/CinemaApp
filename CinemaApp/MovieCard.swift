@@ -13,11 +13,11 @@ struct MovieCard: View {
     
     var body: some View {
         
-            VStack {
+        ZStack {
             Image(photo.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .offset(y: -70)
+                .offset(y: -95)
                 .overlay {
                     
                     VStack(spacing: 20) {
@@ -37,18 +37,15 @@ struct MovieCard: View {
                             
                         }
                     }
-                    .navigationBarHidden(true)
                     .frame(width: 390, height: 200)
                     .background(photo.gradient)
                     .cornerRadius(40)
                     .offset(y: 320)
                 }
         }
-//            .overlay(
-//            Button(action: <#T##() -> Void#>, label: <#T##() -> _#>)
-//            )
     }
-    }
+}
+
 
 
 

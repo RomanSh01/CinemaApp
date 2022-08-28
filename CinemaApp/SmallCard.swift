@@ -14,10 +14,10 @@ struct SmallCard: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Image(photo.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
-                    .cornerRadius(20)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 200)
+                .cornerRadius(20)
                 .shadow(color: .black, radius: 5)
             
             Button {
