@@ -1,4 +1,4 @@
-# CinemaApp
+# CinemaApp with SwiftUI
 
 
 
